@@ -14,14 +14,10 @@ public class Human {
 	
 	public Human() {
 		this(3, 3, 3, 100);
-		System.out.println("Strength: " + this.strength);
-		System.out.println("Stealth: " + this.stealth);
-		System.out.println("Intelligence: " + this.intelligence);
-		System.out.println("Health: " + this.health);
 	}
 	
-	public void attack() {
-		health -= strength;
-		System.out.println("You were attacked! Your current strength is " + health);
+	public void attack(Human target) {
+		target.health -= this.strength;
+		System.out.println("You were attacked by " + target + "! Your current strength is " + target.health);
 	}
 }
