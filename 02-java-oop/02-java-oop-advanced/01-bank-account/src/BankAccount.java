@@ -1,7 +1,4 @@
 import java.util.Random;
-import java.util.Arrays;
-import java.util.stream.Stream;
-import java.util.List;
 
 public class BankAccount {
 	private String accountNumber;
