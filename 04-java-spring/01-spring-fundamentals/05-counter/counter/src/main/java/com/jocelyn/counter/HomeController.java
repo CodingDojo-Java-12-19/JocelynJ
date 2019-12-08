@@ -14,6 +14,7 @@ public class HomeController{
 			setSessionCount(session, 0);
 			numOfSessions = session.getAttribute("count");
 		}
+		System.out.println(numOfSessions);
 		return (Integer) numOfSessions;
 	}
 	
