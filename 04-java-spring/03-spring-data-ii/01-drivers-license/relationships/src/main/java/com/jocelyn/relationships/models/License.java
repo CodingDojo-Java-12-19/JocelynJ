@@ -1,5 +1,6 @@
 package com.jocelyn.relationships.models;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -24,7 +25,7 @@ public class License {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	//table string number
-	private String number;
+	private Integer number;
 	//table expiration date with specified format
 	@DateTimeFormat(pattern="yyyy-MM-dd")
 	private Date expirationDate;
@@ -54,16 +55,21 @@ public class License {
 	}
 
 	//number getter and setter
-	public String getNumber() {
+	public Integer getNumber() {
 		return number;
 	}
 
-	public void setNumber(String number) {
+	public void setNumber(Integer number) {
 		this.number = number;
 	}
 
 	public Date getExpirationDate() {
 		return expirationDate;
+	}
+	
+	public String getExpirationDateFormatted() {
+		SimpleDateFormat fm = new SimpleDateFormat("MM/dd/yyyy");
+		return fm.format(this.expirationDate);
 	}
 
 	public void setExpirationDate(Date expirationDate) {

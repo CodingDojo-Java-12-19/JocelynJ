@@ -10,11 +10,11 @@
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
 	crossorigin="anonymous">
 <link rel="stylesheet" href="css/main.css" />
-<title>Dojos n Ninjas</title>
+<title>Dojos and Ninjas</title>
 </head>
 <body>
-	<div class="container">
-		<h1>Dojos N Ninjas</h1>
+	<div class="wrapper">
+		<h1>Dojos and Ninjas</h1>
 		<h3><a href="/dojos">Dojos</a></h3>
 		<a href="/ninjas/new">Add Ninja</a>
 		<hr />

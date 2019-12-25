@@ -75,12 +75,9 @@ public class PersonController {
         }
     }
     
-
     @RequestMapping("/persons/{id}")
     public String showLicense(@PathVariable("id") Long id, Model model){
 		model.addAttribute("person", personServ.getPerson(id));
     	return "/relationships/one-license.jsp";
     }
-
-	
 }

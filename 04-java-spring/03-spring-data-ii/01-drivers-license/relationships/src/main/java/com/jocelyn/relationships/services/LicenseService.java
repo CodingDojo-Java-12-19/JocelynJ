@@ -41,4 +41,14 @@ public class LicenseService {
 	public void deleteLicense(Long id) {
 		licenseRepo.deleteById(id);
 	}
+	
+
+//    public int generateLicenseNumber() {
+//		License l = licenseRepo.findTopByOrderByNumberDesc();
+//		if(l == null)
+//			return 1;
+//		int largestNumber = l.getNumber();
+//		largestNumber++;
+//		return (largestNumber);
+//	}
 }
