@@ -16,7 +16,6 @@ import com.jocelyn.mvc.models.Book;
 import com.jocelyn.mvc.services.BookService;
 
 @Controller
-//@RequestMapping("/books")
 public class BooksController {
 	private final BookService bookService;
     
